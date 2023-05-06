@@ -1,38 +1,43 @@
 <script>
 	let speakers = [
 		{
-			name: 'Wellness Tech Showcase',
-			description:
-				'Discover cutting-edge wellness technologies and solutions from leading companies.'
+			id: 3,
+			name: 'Mariana Palmeiro',
+			description: 'Wellness & Spa Expert'
 		},
 		{
-			name: 'Expert Panel Discussions',
-			description:
-				'Join panel discussions featuring industry experts discussing the latest trends and innovations in wellness.'
+			id: 1,
+			name: 'Stéphane Reumont',
+			description: 'Spa & Welness Director Beau Rivage Lausanne'
 		},
 		{
-			name: 'Workshops',
-			description:
-				'Participate in hands-on workshops to learn new skills and techniques to improve your wellness journey.'
-		},
-		{
-			name: 'Networking',
-			description:
-				'Connect with like-minded individuals, professionals, and organizations to grow your network in the wellness industry.'
+			id: 2,
+			name: 'Margaux Poilvet',
+			description: 'Spa Director Four Seasons Geneva'
 		}
 	];
 </script>
 
 <div class=" bg-img flex flex-col justify-around items-center h-screen text-center box-border">
 	<h1 class="text-center text-cyan-950 text-xl">
-		An <span style="font-family: 'Meddon', cursive;" class="text-amber-500 text-2xl"
-			>Opportunity</span
-		> not to miss
+		Expert <span style="font-family: 'Meddon', cursive;" class="text-amber-500 text-2xl"
+			>Speakers</span
+		>
 	</h1>
 	{#each speakers as o}
-		<div class=" shadow-lg rounded-xl w-5/6 p-6 border-t-4 border-opacity-70">
-			<h1 class=" text-cyan-950 text-xl">{o.name}</h1>
-			<p>{o.description}</p>
+		<div
+			class="flex flex-row items-center justify-center lg:justify-around shadow-lg rounded-xl w-10/12 p-6 border-t-4 border-opacity-70"
+		>
+			<img
+				class="lg:w-1/4 border-b-2 border-amber-500 w-3/5"
+				src={`./speakers/${o.id}.png`}
+				alt={o.name}
+			/>
+			<span>
+				<h1 class=" text-cyan-950 text-3xl">{o.name}</h1>
+				<p>{o.description}</p>
+			</span>
 		</div>
 	{/each}
+	<p class="  text-cyan-950 italic">Stay tuned! More to be announced shortly..</p>
 </div>

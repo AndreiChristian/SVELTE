@@ -1,13 +1,11 @@
-<div class=" flex flex-col justify-evenly align-middle h-screen text-center box-border">
-	<h4 style="font-family: 'Meddon', cursive;" class=" text-2xl text-amber-500">
-		Innovation Fair 2023
-	</h4>
+<div class="bg-img flex flex-col justify-evenly align-middle h-screen text-center box-border">
+	<h4 class=" text-3xl text-amber-500">Innovation Fair 2023</h4>
 	<div>
-		<span class="bg-img text-9xl bg-clip-text text-transparent">BEYOND</span>
-		<span class="bg-img text-9xl bg-clip-text text-transparent">WELNESS</span>
+		<span class="text-white text-8xl">BEYOND</span>
+		<span class="text-white text-8xl">WELNESS</span>
 	</div>
 
-	<div class="flex justify-around align-middle text-cyan-800">
+	<div class="flex justify-around align-middle text-amber-500">
 		<div class="flex flex-col justify-center gap-1">
 			<svg
 				style="align-self: center;"
@@ -33,7 +31,7 @@
 			<span class="text-3xl">Montreux</span>
 		</div>
 
-		<div class="flex flex-col justify-center gap-1 text-cyan-800 text-lg">
+		<div class="flex flex-col justify-center gap-1 text-amber-500 text-lg">
 			<svg
 				style="align-self: center;"
 				xmlns="http://www.w3.org/2000/svg"
@@ -58,9 +56,9 @@
 <style>
 	.bg-img {
 		font-family: 'Anton', sans-serif;
+		background-image: linear-gradient(rgba(255, 255, 255, 0.002) 79%, white), url(./stoneshd.jpg);
 		background-size: cover;
-		background-image: linear-gradient(rgba(255, 255, 255, 0.142) 75%, white), url(./sea.jpg);
-		background-position: top;
+		background-position: center;
 		background-repeat: no-repeat;
 	}
 </style>
